@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Study Space — Accueil</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
+:root{--cream:#f5f0e7;--paper:#fbf8f2;--brown:#4a3025;--ink:#35261f;--muted:#89776a;--line:#ded2c4;--latte:#e8ded0}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif}
+header{padding:18px 6vw;border-bottom:1px solid var(--line);position:sticky;top:0;background:#f5f0e7ee;backdrop-filter:blur(14px);z-index:5;display:flex;align-items:center}
+.brand{font-family:'DM Serif Display',serif;font-size:1.2rem}.tiny{margin-left:auto;color:var(--muted);font-size:.72rem}
+main{max-width:1120px;margin:auto;padding:42px 20px 90px}
+.hero{min-height:300px;border-radius:30px;padding:46px;background:var(--brown);color:#fff9f2;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:0 20px 45px #40291e20;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-80px;top:-110px;width:340px;height:340px;border:1px solid #ffffff25;border-radius:50%;box-shadow:0 0 0 45px #ffffff08,0 0 0 90px #ffffff06}
+.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:.65rem;opacity:.7}.hero h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(2.8rem,7vw,5.4rem);line-height:.92;margin:12px 0;position:relative}.hero p{max-width:620px;line-height:1.7;opacity:.75;position:relative}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 42px}.pill{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:9px 14px;font-size:.75rem}
+h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:2rem;margin:38px 0 6px}.sub{color:var(--muted);font-size:.84rem;margin-bottom:17px}
+.subject{margin:24px 0 34px}.subject-title{display:flex;align-items:center;gap:10px;margin-bottom:12px}.subject-title h3{margin:0;font-size:1rem}.count{font-size:.65rem;background:var(--latte);padding:4px 8px;border-radius:999px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{display:block;text-decoration:none;color:inherit;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:20px;min-height:160px;transition:.2s;position:relative}.card:hover{transform:translateY(-3px);box-shadow:0 12px 28px #4a302514;border-color:#bda994}
+.num{font-family:'DM Serif Display',serif;font-size:2rem;color:#b6a394}.card h4{margin:18px 0 7px;font-size:.96rem}.card p{margin:0;color:var(--muted);font-size:.75rem;line-height:1.5}.go{position:absolute;right:17px;top:17px;font-size:1.1rem}
+.pending{opacity:.65}.pending .go{font-size:.7rem;background:var(--latte);padding:5px 8px;border-radius:999px}
+.empty{border:1px dashed #cdbdad;border-radius:20px;padding:18px;color:var(--muted);font-size:.78rem;background:#ffffff30}
+footer{text-align:center;color:var(--muted);font-size:.7rem;margin-top:55px}
+@media(max-width:800px){.grid{grid-template-columns:1fr 1fr}.hero{padding:32px}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.hero{min-height:250px;padding:27px}main{padding-left:14px;padding-right:14px}}
+</style></head><body>
+<header><div class="brand">my study space ♡</div><div class="tiny">2ème année · Imagerie médicale</div></header>
+<main>
+<section class="hero"><div class="kicker">personal revision library</div><h1>Study softly,<br>learn deeply.</h1><p>Tes matières, tes chapitres et tes révisions réunis dans un seul espace. Chaque chapitre traité possède son propre lien direct.</p></section>
+<div class="stats"><div class="pill">9 matières</div><div class="pill">3 cours reçus</div><div class="pill">3 chapitres prêts</div></div>
+
+<h2>Mes matières</h2><div class="sub">Les cartes apparaissent ici au fur et à mesure que tes cours sont traités.</div>
+
+<div class="subject"><div class="subject-title"><h3>🤎 Éthique</h3><span class="count">3 chapitres prêts</span></div><div class="grid">
+<a class="card" href="ethique_chapitre_01_medecine_legale_v2.html"><span class="go">↗</span><span class="num">01</span><h4>Introduction à la médecine légale</h4><p>Cours · Images · Résumé · À retenir · Comparaisons · Flashcards · QCM · QROC · Quiz</p></a>
+<a class="card" href="ethique_chapitre_02_secret_professionnel_medical_v2.html"><span class="go">↗</span><span class="num">02</span><h4>Le secret professionnel médical</h4><p>Cours · Résumé · À retenir · Flashcards · QCM · QROC · Quiz</p></a>
+</div></div>
+
+<div class="subject"><div class="subject-title"><h3>🩺 Pathologies médicales</h3><span class="count">1 chapitre prêt</span></div><div class="grid">
+<a class="card" href="cirrhose_hepatites_virales.html"><span class="go">↗</span><span class="num">01</span><h4>Cirrhose & hépatites virales</h4><p>Cours · Résumé · À retenir · Flashcards · QCM · QROC · Quiz</p></a>
+</div></div>
+
+<div class="subject"><div class="subject-title"><h3>☢️ Radioprotection</h3></div><div class="empty">Les prochains chapitres de Radioprotection apparaîtront ici.</div></div>
+<div class="subject"><div class="subject-title"><h3>⚙️ Maintenance & démarche qualité</h3></div><div class="empty">Les prochains chapitres apparaîtront ici.</div></div>
+<div class="subject"><div class="subject-title"><h3>🦴 Imagerie de l'appareil locomoteur</h3></div><div class="empty">Les prochains chapitres apparaîtront ici.</div></div>
+<div class="subject"><div class="subject-title"><h3>🩻 Imagerie de l'appareil uro-génital</h3></div><div class="empty">Les prochains chapitres apparaîtront ici.</div></div>
+<div class="subject"><div class="subject-title"><h3>🏥 Pathologies chirurgicales</h3></div><div class="empty">Les prochains chapitres apparaîtront ici.</div></div>
+<div class="subject"><div class="subject-title"><h3>🧠 Psychosociologie</h3></div><div class="empty">Les prochains chapitres apparaîtront ici.</div></div>
+<div class="subject"><div class="subject-title"><h3>🇬🇧 Anglais médical</h3></div><div class="empty">Traitement spécial : mots-clés scientifiques du cours + explication de chaque terme.</div></div>
+
+<footer>made for revision days ☕︎ · my study space</footer>
+</main></body></html>

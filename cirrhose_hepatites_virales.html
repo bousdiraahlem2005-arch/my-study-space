@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cirrhose & Hépatites virales — My Study Space</title>
+<style>
+:root{--bg:#f5f0e7;--paper:#fffaf3;--brown:#4b3025;--ink:#33241e;--muted:#89766a;--line:#dfd2c3;--soft:#ebe0d2}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,sans-serif;line-height:1.65}
+header{background:var(--brown);color:white;padding:38px 7vw}.k{font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.7}h1{font-family:Georgia,serif;font-size:clamp(32px,6vw,58px);line-height:1;margin:8px 0 12px}header p{opacity:.75}
+.tabs{position:sticky;top:0;z-index:9;background:#f5f0e7ee;backdrop-filter:blur(12px);padding:12px 5%;display:flex;gap:8px;overflow:auto;border-bottom:1px solid var(--line)}
+.tabs button{border:1px solid var(--line);background:var(--paper);padding:9px 13px;border-radius:999px;white-space:nowrap;cursor:pointer;color:var(--ink)}
+.tabs button.active{background:var(--brown);color:white;border-color:var(--brown)}
+main{max-width:1050px;margin:auto;padding:30px 18px 80px}.view{display:none}.view.active{display:block}
+h2{font-family:Georgia,serif;font-size:34px}h3{margin-top:36px;border-bottom:1px solid var(--line);padding-bottom:8px}h4{margin:0 0 8px}
+.card,.q,.memory,.summary{background:var(--paper);border:1px solid var(--line);border-radius:17px;padding:18px;margin:12px 0}.grid,.flashgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.formula{background:var(--brown);color:white;padding:16px 18px;border-radius:14px;margin:15px 0;font-weight:bold;text-align:center}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chips span{background:var(--soft);padding:7px 10px;border-radius:999px;font-size:13px}
+table{width:100%;border-collapse:collapse;background:var(--paper);margin:15px 0}th,td{border:1px solid var(--line);padding:10px;text-align:left}th{background:var(--soft)}
+.flash{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:17px}.flash b{display:block;margin-bottom:8px}.flash span{color:var(--muted)}
+details{margin-top:10px;background:var(--soft);border-radius:10px;padding:9px 12px}summary{cursor:pointer;font-weight:bold}
+.note{color:var(--muted);font-size:13px}.quiz button{display:block;width:100%;text-align:left;margin:8px 0;padding:12px;border:1px solid var(--line);background:var(--paper);border-radius:10px;cursor:pointer}.result{font-weight:bold;margin-top:12px}
+@media(max-width:700px){.grid,.flashgrid{grid-template-columns:1fr}}
+</style></head>
+<body>
+<header><div class="k">Pathologies médicales · Hépato-gastroentérologie</div><h1>Cirrhose &<br>hépatites virales</h1><p>Dr Dhouha Cherif · Hôpital la Rabta · 26/09/2026</p></header>
+<nav class="tabs">
+<button class="active" onclick="show('cours',this)">Cours</button>
+<button onclick="show('resume',this)">Résumé</button>
+<button onclick="show('retenir',this)">À retenir</button>
+<button onclick="show('flash',this)">Flashcards</button>
+<button onclick="show('qcm',this)">QCM</button>
+<button onclick="show('qroc',this)">QROC</button>
+<button onclick="show('quiz',this)">Quiz</button>
+</nav>
+<main>
+<section id="cours" class="view active">
+<h2>Cours organisé</h2><p class="note">Contenu organisé à partir du cours fourni.</p>
+<h3>01 · Cirrhose : définition et physiopathologie</h3>
+<div class="card"><h4>Définition</h4><p>Conséquence de toute lésion chronique des hépatocytes, quelle qu’en soit la cause. Les lésions touchent tout le foie.</p></div>
+<div class="formula">Nécrose + fibrose diffuse + nodules de régénération = cirrhose</div>
+<div class="grid"><div class="card"><h4>Insuffisance hépatocellulaire</h4><p><b>Synthèse ↓ :</b> TP, facteur V, albuminémie, cholestérolémie.</p><p><b>Épuration ↓ :</b> ictère, diminution de l’épuration de l’ammoniaque et de l’élimination de certains médicaments.</p></div>
+<div class="card"><h4>Hypertension portale</h4><p>Nodules → compression des veinules sus-hépatiques → résistances intrahépatiques ↑. Conséquences : splénomégalie, voies de dérivation porto-systémiques, ascite.</p></div></div>
+
+<h3>02 · Diagnostic & décompensation</h3>
+<div class="grid"><div class="card"><h4>Phase compensée</h4><p>Souvent aucun signe fonctionnel. Hépatomégalie possible, splénomégalie, circulation veineuse collatérale. Signes d’IHC possibles : angiomes stellaires, érythrose palmaire, diminution de la pilosité, amyotrophie thénar/hypothénar.</p></div>
+<div class="card"><h4>Biologie</h4><p>Transaminases ↑ ou normales ; cholestase possible ; TP, facteur V, albumine et cholestérol ↓ ; thrombopénie et anémie possibles.</p></div>
+<div class="card"><h4>Échographie</h4><p>Foie déformé, dysmorphique, nodulaire. Signes d’HTP : splénomégalie, circulation collatérale intra-abdominale, calibre du tronc spléno-portal ↑.</p></div>
+<div class="card"><h4>FOGD</h4><p>Varices œsophagiennes, varices gastriques et gastropathie hypertensive.</p></div></div>
+<div class="formula">Diagnostic = dysmorphie hépatique + signes d’IHC + signes d’HTP</div>
+<div class="card"><h4>Biopsie / Fibroscan</h4><p>La ponction-biopsie confirme la cirrhose et oriente l’étiologie ; le cours cite comme CI les troubles de l’hémostase et l’ascite abondante. Le Fibroscan évalue de façon non invasive l’élasticité du foie.</p></div>
+<div class="chips"><span>Décompensation : ascite</span><span>Œdèmes MI</span><span>Ictère</span></div>
+
+<h3>Complications</h3>
+<div class="grid"><div class="card"><h4>Hémorragie digestive</h4><p>Hématémèse, méléna, rectorragies. Cause principale : rupture des varices œsophagiennes. Urgence avec hospitalisation, réanimation et FOGD.</p></div>
+<div class="card"><h4>Infection d’ascite</h4><p>Douleur abdominale + fièvre. Diagnostic : PNN &gt; 250/mm³ dans le liquide d’ascite.</p></div>
+<div class="card"><h4>Encéphalopathie</h4><p>Accumulation d’ammoniac : stade 1 lenteur intellectuelle/flapping tremor ; stade 2 désorientation/confusion ; stade 3 coma.</p></div>
+<div class="card"><h4>Autres</h4><p>Syndrome hépato-rénal et hydrothorax.</p></div></div>
+
+<h3>Carcinome hépatocellulaire — CHC</h3>
+<div class="card"><p>Tumeur primitive du foie. Le cours indique que 80 % des CHC se développent sur une cirrhose. L’imagerie intervient dans le dépistage, la détection, la caractérisation, la thérapeutique et la surveillance.</p></div>
+<div class="formula">WASH-IN artériel + WASH-OUT portal = critères typiques du CHC</div>
+<table><tr><th>TDM</th><th>Aspect cité</th></tr><tr><td>Sans injection</td><td>Hypodense homogène ; hétérogène si &gt;3 cm</td></tr><tr><td>Artérielle</td><td>Hyperdense, intense, fugace → wash-in</td></tr><tr><td>Portale</td><td>Hypo- ou isodense → wash-out</td></tr><tr><td>Équilibre</td><td>Isodense</td></tr></table>
+
+<h3>Score de Child-Pugh</h3>
+<table><tr><th>Critère</th><th>1 pt</th><th>2 pts</th><th>3 pts</th></tr><tr><td>TP</td><td>&gt;55%</td><td>45–55%</td><td>&lt;45%</td></tr><tr><td>Ascite</td><td>Absente</td><td>Modérée</td><td>Abondante</td></tr><tr><td>Bilirubine</td><td>&lt;25 µmol/L</td><td>25–50</td><td>&gt;50</td></tr><tr><td>Albumine</td><td>&gt;35 g/L</td><td>28–35</td><td>&lt;28</td></tr><tr><td>Encéphalopathie</td><td>Absente</td><td>Modérée</td><td>Sévère</td></tr></table>
+<p><b>A = 5–6 · B = 7–9 · C = 10–15</b></p>
+
+<h3>03 · Étiologies & traitement</h3>
+<div class="chips"><span>Virale B/C/B+D</span><span>Alcool</span><span>NASH</span><span>Auto-immune</span><span>Métabolique</span><span>Médicamenteuse</span></div>
+<div class="card"><h4>Cirrhose compensée</h4><p>Sevrage alcoolique si intoxication, interdiction des médicaments hépatotoxiques, traitement antiviral si cirrhose post-virale B/C. Seul traitement curatif cité : transplantation hépatique.</p></div>
+<div class="card"><h4>Ascite</h4><p>Traiter la cause, hospitaliser/rechercher un facteur déclenchant, PELA, régime hyposodé + diurétiques, ponctions évacuatrices. Ascite réfractaire : ponctions de grande abondance + albumine ; transplantation.</p></div>
+<div class="card"><h4>Rupture de varices</h4><p>Réanimation/transfusion/Sandostatine® IV → ligature élastique → si échec TIPS → prévention des récidives par ligatures + bêtabloquants.</p></div>
+<div class="card"><h4>CHC</h4><p><b>Curatif :</b> transplantation, résection, ablation percutanée (radiofréquence, micro-ondes). <b>Palliatif :</b> chimioembolisation, radioembolisation, radiothérapie stéréotaxique, thérapies ciblées citées.</p></div>
+<div class="card"><h4>Techniques</h4><p><b>Radiofréquence :</b> aiguille sous échographie/TDM et thermoablation. <b>Micro-ondes :</b> énergie électromagnétique → chaleur → nécrose de coagulation. <b>TACE :</b> antimitotique + Lipiodol, avec action chimique et embolisation des vaisseaux tumoraux.</p></div>
+
+<h3>04 · Hépatites virales aiguës</h3>
+<div class="card"><p>Atteinte inflammatoire et nécrotique diffuse du parenchyme hépatique due à cinq virus hépatotropes : A, B, C, D et E.</p></div>
+<table><tr><th>Virus</th><th>Génome</th><th>Transmission</th><th>Chronicité</th></tr><tr><td>VHA</td><td>ARN</td><td>Oro-fécale</td><td>Non</td></tr><tr><td>VHB</td><td>ADN</td><td>Parentérale</td><td>Possible</td></tr><tr><td>VHC</td><td>ARN</td><td>Parentérale</td><td>Possible</td></tr><tr><td>VHD</td><td>ARN</td><td>Parentérale (+VHB)</td><td>Possible</td></tr><tr><td>VHE</td><td>ARN</td><td>Oro-fécale</td><td>Non</td></tr></table>
+<div class="formula">A et E : oro-fécale, jamais chroniques — selon le cours</div>
+<div class="card"><h4>Clinique</h4><p>4 phases : incubation → pré-ictérique → ictérique → convalescence. Pré-ictérique : asthénie, syndrome pseudo-grippal, troubles digestifs, éruption possible. Ictérique : ictère progressif, urines foncées, selles parfois décolorées.</p></div>
+<div class="card"><h4>Biologie</h4><p>Cytolyse : ALAT/ASAT 10–100× la normale. Cholestase : GGT, PAL, bilirubine conjuguée ↑. Forme grave : TP &lt;50 % et facteur V &lt;50 %.</p></div>
+<table><tr><th>Virus</th><th>Marqueurs cités</th></tr><tr><td>A</td><td>IgM anti-VHA</td></tr><tr><td>B</td><td>Ag HBs + IgM anti-HBc</td></tr><tr><td>D</td><td>Ag HD + IgM anti-HD</td></tr><tr><td>C</td><td>Ac anti-VHC + ARN viral C</td></tr><tr><td>E</td><td>IgM anti-VHE</td></tr></table>
+</section>
+
+<section id="resume" class="view"><h2>Résumé express</h2><div class="summary"><p><b>Cirrhose :</b> nécrose + fibrose + nodules de régénération.</p><p><b>2 syndromes :</b> IHC + HTP.</p><p><b>Décompensation :</b> ascite + œdèmes + ictère.</p><p><b>Complications :</b> hémorragie digestive, infection d’ascite, encéphalopathie, CHC, syndrome hépato-rénal, hydrothorax.</p><p><b>CHC :</b> wash-in artériel + wash-out portal.</p><p><b>Hépatites :</b> A/E oro-fécales ; B/C/D parentérales. VHD dépend du VHB.</p><p><b>Hépatite aiguë grave :</b> TP et facteur V &lt;50 %.</p></div></section>
+
+<section id="retenir" class="view"><h2>À retenir</h2>
+<div class="memory">1 · Nécrose + fibrose + nodules = cirrhose.</div><div class="memory">2 · IHC + HTP = deux conséquences majeures.</div><div class="memory">3 · Diagnostic = faisceau d’arguments.</div><div class="memory">4 · Décompensation = ascite, œdèmes, ictère.</div><div class="memory">5 · Infection d’ascite : PNN &gt;250/mm³.</div><div class="memory">6 · CHC : wash-in artériel + wash-out portal.</div><div class="memory">7 · Child-Pugh : TP, ascite, bilirubine, albumine, encéphalopathie.</div><div class="memory">8 · Vaccination anti-VHB : prévention essentielle citée.</div><div class="memory">9 · VHA/VHE = oro-fécale.</div><div class="memory">10 · Hépatite aiguë grave = TP + facteur V &lt;50%.</div></section>
+
+<section id="flash" class="view"><h2>Flashcards</h2><div class="flashgrid">
+<div class="flash"><b>3 critères de cirrhose ?</b><span>Nécrose, fibrose diffuse, nodules de régénération.</span></div><div class="flash"><b>2 conséquences ?</b><span>IHC + HTP.</span></div><div class="flash"><b>3 décompensations ?</b><span>Ascite, œdèmes MI, ictère.</span></div><div class="flash"><b>PNN infection ascite ?</b><span>&gt;250/mm³.</span></div><div class="flash"><b>CHC typique ?</b><span>Wash-in artériel + wash-out portal.</span></div><div class="flash"><b>Child A/B/C ?</b><span>5–6 / 7–9 / 10–15.</span></div><div class="flash"><b>Virus oro-fécaux ?</b><span>VHA + VHE.</span></div><div class="flash"><b>VHD dépend de ?</b><span>VHB.</span></div></div></section>
+
+<section id="qcm" class="view"><h2>QCM</h2>
+<div class="q"><b>1 · Critères de cirrhose :</b><p>A Nécrose · B Fibrose · C Nodules · D Cholestase seule</p><details><summary>Correction</summary><b>A + B + C</b></details></div>
+<div class="q"><b>2 · Signes d’HTP :</b><p>A Circulation porto-cave · B Splénomégalie · C Varices œsophagiennes · D Hypoalbuminémie isolée</p><details><summary>Correction</summary><b>A + B + C</b></details></div>
+<div class="q"><b>3 · Décompensation :</b><p>A Ascite · B Œdèmes MI · C Ictère · D Céphalées</p><details><summary>Correction</summary><b>A + B + C</b></details></div>
+<div class="q"><b>4 · CHC typique :</b><p>A Wash-in artériel · B Wash-out portal · C Les deux</p><details><summary>Correction</summary><b>C</b></details></div>
+<div class="q"><b>5 · Virus oro-fécaux :</b><p>A VHA · B VHB · C VHC · D VHE</p><details><summary>Correction</summary><b>A + D</b></details></div></section>
+
+<section id="qroc" class="view"><h2>QROC</h2>
+<div class="q"><b>1 · Citer les 3 critères anatomopathologiques.</b><details><summary>Réponse</summary>Nécrose, fibrose diffuse, nodules de régénération.</details></div>
+<div class="q"><b>2 · Deux conséquences majeures ?</b><details><summary>Réponse</summary>IHC et hypertension portale.</details></div>
+<div class="q"><b>3 · Signes recherchés à la FOGD ?</b><details><summary>Réponse</summary>Varices œsophagiennes, varices gastriques, gastropathie hypertensive.</details></div>
+<div class="q"><b>4 · Critères TDM typiques du CHC ?</b><details><summary>Réponse</summary>Wash-in artériel + wash-out portal.</details></div>
+<div class="q"><b>5 · Les 4 phases d’une hépatite virale aiguë ?</b><details><summary>Réponse</summary>Incubation, pré-ictérique, ictérique, convalescence.</details></div></section>
+
+<section id="quiz" class="view quiz"><h2>Quiz interactif</h2><div id="qq"></div><div class="result" id="res"></div></section>
+</main>
+<script>
+function show(id,b){document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));b.classList.add('active');window.scrollTo({top:document.querySelector('.tabs').offsetTop,behavior:'smooth'})}
+const qs=[["La cirrhose associe ?",["Nécrose + fibrose + nodules","Ictère seul","Ascite seule"],0],["Seuil PNN infection d’ascite ?",["100/mm³",">250/mm³","1000/mm³"],1],["CHC typique ?",["Wash-out artériel","Wash-in artériel + wash-out portal","Aucun rehaussement"],1],["Virus dépendant du VHB ?",["VHA","VHD","VHE"],1],["Child B correspond à ?",["5–6","7–9","10–15"],1]];
+let i=0,s=0;function render(){if(i>=qs.length){document.getElementById('qq').innerHTML='';document.getElementById('res').textContent='Score : '+s+' / '+qs.length;return}let q=qs[i];document.getElementById('qq').innerHTML='<div class="card"><b>'+(i+1)+'. '+q[0]+'</b>'+q[1].map((x,j)=>'<button onclick="ans('+j+')">'+x+'</button>').join('')+'</div>'}function ans(j){if(j===qs[i][2])s++;i++;render()}render();
+</script></body></html>
